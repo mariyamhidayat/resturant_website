@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bite Club</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Experience Culinary Delight</h1>
+            <p>Savor the flavors of our exquisite cuisine.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </header>
+
+    <section id="menu" class="menu">
+        <h2>Our Delicious Menu</h2>
+        <div class="menu-item">
+            <img src="r1.jpg" alt="Pasta">
+            <h3>Pasta Carbonara</h3>
+            <p>Creamy and flavorful pasta with bacon and eggs.</p>
+            <span class="price">$15</span>
+        </div>
+        <div class="menu-item">
+            <img src="burgar.jpg" alt="Burger">
+            <h3>Gourmet Burger</h3>
+            <p>Juicy beef patty with all the fixings on a brioche bun.</p>
+            <span class="price">$12</span>
+        </div>
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic Neapolitan pizza with fresh tomatoes and mozzarella.</p>
+            <span class="price">$18</span>
+        </div>
+        </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to Delicious Bites, where we are passionate about creating unforgettable dining experiences. Our chefs use only the freshest ingredients to prepare dishes that are both delicious and visually stunning. We strive to provide exceptional service in a warm and inviting atmosphere. Come and join us for a culinary journey!</p>
+        <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+        <p>123 Main Street, Anytown, CA 91234</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: info@deliciousbites.com</p>
+        </div>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <section id="reservations" class="reservations">
+      <h2>Reservations</h2>
+      <p>Book your table online or call us at (555) 555-5555.</p>
+       <form action="reserve.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <input type="number" name="guests" placeholder="Number of Guests" required>
+        <button type="submit" class="btn">Make Reservation</button>
+       </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Delicious Bites Restaurant. All rights reserved.</p>
+    </footer>
+
+    <div id="chat-container">
+        <div id="chat-header">
+            <span>Chat with us!</span>
+            <button id="close-chat">X</button>
+        </div>
+        <div id="chat-messages">
+            </div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
